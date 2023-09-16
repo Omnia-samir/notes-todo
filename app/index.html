@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes and To-Do List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../app/style.css">
+</head>
+<body>
+    <div class="container">
+            <h1> <img src="../app/images/note.png" alt="note icon" class="note-icon">
+                Notes</h1>
+                <div class="notes">
+                    <div class="note-input">
+                        <input type="text" id="noteInput" placeholder="Add a new note:">
+                        <button onclick="addNote()">
+                            <i class="fa-regular fa-plus"></i>Note
+                        </button>
+                    </div>
+                    <div class="note-container">
+                        <ul id="noteList">
+                            <!-- Notes will be here -->
+                        </ul>
+                    </div>
+                </div>
+
+            <h1> <img src="../app/images/to-do-list (2).png" alt="todo list icon" class="todo-icon">
+                To-Do List</h1>
+            <div class="todos">
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new task:">
+                    <button onclick="addTodo()">
+                        <i class="fa-regular fa-check-circle"></i>Task
+                    </button>
+                </div>
+                <div class="task-container">
+                    <ul id="todoList">
+                        
+                        <!-- To-do items will be here -->
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3ec9ffc884.js" crossorigin="anonymous"></script>
+    <script src="../app/script.js""></script>
+</body>
+</html>

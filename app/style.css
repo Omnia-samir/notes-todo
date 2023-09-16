@@ -1,0 +1,131 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #32465c;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.note-icon, .todo-icon {
+    width: 70px;
+    height: 70px;
+    
+}
+.notes, .todos {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 35px;
+    align-content: center;
+    border-radius: 12px;
+}
+ul::-webkit-scrollbar{
+    background-color: transparent;
+}
+.task-container,
+.note-container{
+    border-radius: 10px;
+    margin: 20px;
+}
+li {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 19px;
+    background-color: #364b64;
+    min-height: 40px;
+    max-height: fit-content;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.checked {
+        text-decoration: line-through;
+        background-color: #4fad4f;
+}
+input[type="text"] {
+    width: 80%;
+    height: 23px;
+    padding: 5px ;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: none;
+    text-indent: 10px;
+    font-size: 15px;
+    background-color: #d2dbe6;
+    
+}
+.note-input, .todo-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+button {
+    padding: 3px 25px ;
+    background-color: #0068d8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 33px;
+    border-radius: 15px;
+    /* width: 10px; */
+}
+
+button:hover {
+    background-color: #0150a5;
+}
+button:active{
+    transform: scale(1.05);
+}
+
+i.fas.fa-edit.edit-icon {
+    margin-left: 40px;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+}
+i.fas.fa-edit.edit-icon:hover{
+    transform: scale(1.1);
+}
+
+i.fas.fa-trash-alt.delete-icon {
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+i.fas.fa-trash-alt.delete-icon:hover{
+    transform: scale(1.1);
+    color: rgb(255, 60, 60);
+}
